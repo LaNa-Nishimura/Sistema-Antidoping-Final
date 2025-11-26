@@ -17,7 +17,7 @@ body {
     background-color: #f4f6f9;
     color: #333;
     padding: 20px;
-    background-image: url('img/campo6.jpg'); /* Caminho da imagem */
+    background-image: url('../img/campo6.jpg'); /* Caminho da imagem */
     background-size: cover;      /* Faz a imagem cobrir toda a tela */
     background-repeat: no-repeat; /* Evita repetição da imagem */
     background-position: center;  /* Centraliza a imagem */
