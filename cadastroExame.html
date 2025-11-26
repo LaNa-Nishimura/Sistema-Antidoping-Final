@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Exame - Sistema Antidoping CBF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Exame</h2>
+        <form id="formCadastroExame">
+            <label for="id_atleta">ID do Atleta:</label>
+            <input type="text" id="id_atleta" name="id_atleta" required><br><br>
+
+            <label for="data_exame">Data do Exame:</label>
+            <input type="date" id="data_exame" name="data_exame" required><br><br>
+
+            <label for="tipo_exame">Tipo de Exame:</label>
+            <select id="tipo_exame" name="tipo_exame" required>
+                <option value="urina">Urina</option>
+                <option value="sangue">Sangue</option>
+                <option value="outro">Outro</option>
+            </select><br><br>
+
+            <button type="submit">Registrar Exame</button>
+            <p class="back"><a href="dashboard.html">Voltar ao Dashboard</a></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

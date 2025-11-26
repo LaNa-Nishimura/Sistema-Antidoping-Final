@@ -1,0 +1,229 @@
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0; /* remove margens padrão do navegador */
+    padding: 0;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 20px;
+    background-image: url('img/campo6.jpg'); /* Caminho da imagem */
+    background-size: cover;      /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-position: center;  /* Centraliza a imagem */
+}
+
+/* Container principal */
+.container {
+    max-width: 1100px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    background-color: rgba(255, 255, 255, 0.5); /* branco com 50% de transparência */
+    border-radius: 10px;
+}
+
+/* Títulos */
+h1 {
+    margin-bottom: 20px;
+    color: #41006d;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #004c97; /* Azul padrão dashboard */
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Inputs */
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c7c7c7;
+    border-radius: 6px;
+    background-color: #fdfdfd;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #004c97;
+    background-color: #eef4fb;
+    outline: none;
+}
+
+/* Botão */
+button {
+    padding: 12px;
+    background-color: #004c97;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: #003a75;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    font-size: 15px;
+}
+
+table th {
+    background-color: #eef4fb;
+    color: #004c97;
+    font-weight: 700;
+}
+
+table tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+table tr:hover {
+    background-color: #e6f0fa;
+}
+
+ul {
+    font-size: 20px;
+}
+
+/* Alertas */
+.alert {
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.alert-error {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #004c97;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard */
+header nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #004c97;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.stat-card {
+    background-color: #eef4fb;
+    padding: 18px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.stat-card h3 {
+    color: #333;
+    font-size: 18px;
+}
+
+.stat-card p {
+    color: #004c97;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .statistics {
+        flex-direction: column;
+    }
+
+    .stat-card {
+        width: 100%;
+    }
+}
+
+.login {
+    margin-top: 20px;
+}
+
+.back {
+    margin-top: 20px;
+}

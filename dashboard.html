@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistema Antidoping CBF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bem-vindo ao Sistema Antidoping CBF</h1>
+            <nav>
+                <a href="cadastroAtleta.html">Adicionar Atleta</a>
+                <a href="cadastroExame.html">Adicionar Exames</a>
+                <a href="resultados.html">Pesquisar Resultados</a>
+                <a href="login.html" id="btnSair">Sair</a>
+            </nav>
+        </header>
+        
+        <div class="statistics">
+            <div class="stat-card">
+                <h3>Total de Atletas</h3>
+                <p id="totalAtletas">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Exames Realizados</h3>
+                <p id="totalExames">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Exames Pendentes</h3>
+                <p id="totalPendentes">0</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Confederação Brasileira de Futebol</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
